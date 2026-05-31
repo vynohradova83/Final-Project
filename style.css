@@ -1,0 +1,128 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f5;
+    color: #2e3233;
+    line-height: 1.6;
+}
+
+:root {
+    --graphite: #2e3233;
+    --forest: #31453b;
+    --sage: #6c7a72;
+    --mist: #d7d9d5;
+    --white: #f7f7f5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--graphite);
+    padding: 15px 30px;
+}
+
+nav a {
+    color: var(--mist);
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid var(--mist);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--forest);
+}
+
+footer {
+    background: var(--graphite);
+    color: var(--mist);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.page-title {
+    padding: 40px;
+    text-align: center;
+    font-size: 32px;
+    color: var(--forest);
+}
+
+.experience {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.experience img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
