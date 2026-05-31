@@ -42,7 +42,7 @@ nav a:hover {
 .hero {
     position: relative;
     height: 90vh;
-    background-image: url(hero.jpg");
+    background-image: url("hero.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -123,6 +123,13 @@ nav a:hover {
 .video {
     display: flex;
     justify-content: center;
+    padding: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     padding: 40px;
 }
 
